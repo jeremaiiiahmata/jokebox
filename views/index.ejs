@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JokeBox</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/main.css">
+    
+</head>
+<body>
+    <% if (locals.data) { %>
+
+    <div class="container">
+        <h1>JokeBox</h1>
+        <h3>  <% if (data.setup) { %>
+            <%= data.setup %>
+        <% } else { %> 
+            I have a joke...
+        <% } %> </h3>
+        <p>
+            <% if (data.delivery) { %>
+                <%= data.delivery %>
+            <% } else if (data.joke) { %> 
+                <%= data.joke %>
+            <% } %>
+        </p>
+        <form action="/" method="POST">
+            <input type="submit" value="Another one">
+        </form>
+        
+    </div>
+
+    <% } %>
+</body>
+</html>
