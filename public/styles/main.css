@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Pixelify+Sans:wght@400..700&display=swap');
+
+body{
+    background-color: #FFF8E6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    margin-top: 200px;
+    margin-bottom: 200px;
+    height: 50%;
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    
+}
+
+.container h1 {
+    margin: 0px;
+    margin-bottom: 10px;
+    font-family: 'Pixelify Sans', sans-serif;
+    font-size: 142px;
+    color: #8D0B41;
+}
+
+.container h3, p{
+    margin: 10px;
+    font-family: 'Inter', sans-serif;
+    color: #23221E;
+}
+
+.container h3 {
+    font-size: 32px;
+    font-weight: 600;
+    color: #23221E;
+}
+
+.container p {
+    width: 75%;
+    font-size: 22px;
+    font-weight: 400;
+    color: #23221E;
+}
+
+.container input {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #D39D55;
+    border: none;
+    border-radius: 2px;
+    color: #23221E;
+    font-family: "Inter", sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.container input:hover{
+  
+    background-color: #8D0B41;
+    color: white;
+    transition: 0.5s;
+  
+}
